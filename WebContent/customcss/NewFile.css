@@ -1,0 +1,25 @@
+@CHARSET "ISO-8859-1";
+.active1
+{
+	color: red;
+    font-weight: 900;
+    font-size: large;
+    background-color: #10c1cf;
+    border-bottom: thick;
+    border-bottom-color: red;
+}
+
+/* div {
+    display: block;
+    height: 50px;
+    width: 80px;
+    background-color: #0376b4;
+    
+    
+}
+
+div:hover
+{
+	
+	border-bottom: 3px solid red;
+} */
