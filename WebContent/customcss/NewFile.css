@@ -1,12 +1,8 @@
 @CHARSET "ISO-8859-1";
 .active1
 {
-	color: red;
-    font-weight: 900;
-    font-size: large;
-    background-color: #10c1cf;
-    border-bottom: thick;
-    border-bottom-color: red;
+	border-bottom: 3px solid red;
+    font-weight: bold;
 }
 
 /* div {
