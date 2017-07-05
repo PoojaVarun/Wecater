@@ -9,6 +9,7 @@
     <title>CaterersHub</title>
 	
 	<script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+	<script src="library/jquery/jquery.min.js"></script>
 	
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,22 +33,23 @@
 
   <body ng-app="routerApp" ng-controller='Myctrl'>
 
-    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-primary">
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top navbar-custom">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand active1" href="#">CaterersHub</a>
+      <a class="navbar-brand mb-0" href="#"><img src="C:/Users/Pooja dev/Desktop/bon.png" width="30" height="30" alt="">
+      CaterersHub</a>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item" ng-class="{active1:isActive('/home')}">
-            <a class="nav-link" ui-sref="Home" >Home <span class="sr-only">(current)</span></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
+          <li  ng-class="{active1:isActive('/home')} " class="navbar-margin">
+            <a class="nav-link" style="margin-top: 7px;" ui-sref="Home" >Home </a>
           </li>
-          <li class="nav-item" ng-class="{active1:isActive('/menu')}">
-            <a class="nav-link" ui-sref="Menu" >Menu <span class="sr-only">(current)</span></a>
+          <li  ng-class="{active1:isActive('/menu')} "class="navbar-margin">
+            <a class="nav-link " style="margin-top: 7px;" ui-sref="Menu" >Menu <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item " ng-class="{active1:isActive('/offers')}">
-            <a class="nav-link" ui-sref="Offers" >Offers <span class="sr-only">(current)</span></a>
+          <li  ng-class="{active1:isActive('/offers')}"class="navbar-margin">
+            <a class="nav-link" style="margin-top: 7px;" ui-sref="Offers" >Offers <span class="sr-only">(current)</span></a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

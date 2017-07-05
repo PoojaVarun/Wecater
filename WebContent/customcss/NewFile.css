@@ -3,8 +3,19 @@
 {
 	border-bottom: 3px solid red;
     font-weight: bold;
+    background-color: #c0c0c0;
 }
-
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: #fab82e;
+}
+.navbar-margin
+{
+	margin-bottom:-0.6em;
+	margin-top: -0.6em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
 /* div {
     display: block;
     height: 50px;
