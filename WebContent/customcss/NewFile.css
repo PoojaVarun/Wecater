@@ -1,13 +1,13 @@
 @CHARSET "ISO-8859-1";
 .active1
 {
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid rgb(12, 234, 204);
     font-weight: bold;
-    background-color: #c0c0c0;
+    background-color: #31b0d5;
 }
 .navbar-custom {
     color: #FFFFFF;
-    background-color: #fab82e;
+    background-color: #272a79;
 }
 .navbar-margin
 {
@@ -15,6 +15,10 @@
 	margin-top: -0.6em;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
+}
+.navbar-navlink
+{
+	margin-top: 7px;
 }
 /* div {
     display: block;
