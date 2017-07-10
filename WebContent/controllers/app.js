@@ -51,33 +51,7 @@ routerApp.controller('widgetsController', function($scope,$http) {
 routerApp.controller('Myctrl', function($scope, $location) {
     $scope.isActive = function(route) {
         return route === $location.path();
-    }
-    var opacity = 1;
-    var lastScrollTop = 0;
-    $(window).scroll(function(){
-        var st = $(this).scrollTop();
-        if(st == 0)
-            $('.navbar').css('opacity','1');
-        
-        if (opacity > 0.5 && (st > lastScrollTop)){
-           $('.navbar').css('opacity','-=0.01');
-           opacity -= 0.01;
-        }
-        else if(opacity < 1)
-        {
-           $('.navbar').css('opacity','+=0.01');
-            opacity += 0.01;
-        }
-        lastScrollTop = st;
-    });
-    $(document).ready(function(){
-        $(".navbar-margin").hover(function(){
-            $(this).css("border-bottom", "3px solid red");
-            }, function(){
-            $(this).css("border-bottom","");
-        });
-    });
-    
+    }    
 });
 
 /*$(document).on('scroll', function (e) {
