@@ -33,7 +33,19 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         
 });
 
-routerApp.controller('widgetsController', function($scope, $location) {
+//Added REST $http call - Varun
+routerApp.controller('widgetsController', function($scope,$http) {
+	$scope.name=null;
+	$scope.age=null;
+	alert("Hi");
+	$http.get("http://localhost:2222/Cateringservice/rest/Caters/getUsers")
+	.then(function(response) {
+		$scope.name=response.data.name;
+		$scope.age=response.data.age;
+	}, function(response) {
+		$scope.name="Fail";
+		$scope.age=null;
+	});
 });
 
 routerApp.controller('Myctrl', function($scope, $location) {
