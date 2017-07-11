@@ -5,6 +5,12 @@
     font-weight: bold;
     background-color: #31b0d5;
 }
+
+.mySlides {
+	display:none
+	}
+	
+	
 .navbar-custom {
     color: #FFFFFF;
     background-color: #272a79;
