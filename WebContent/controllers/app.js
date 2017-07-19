@@ -37,7 +37,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
 routerApp.controller('widgetsController', function($scope,$http) {
 	$scope.name=null;
 	$scope.age=null;
-	$http.get("http://localhost:2222/Cateringservice/rest/Caters/getUsers")
+	$http.get("http://localhost:2222/Catering_service/rest/Caters/getUsers")
 	.then(function(response) {
 		$scope.name=response.data.name;
 		$scope.age=response.data.age;
