@@ -19,7 +19,6 @@ public class CatersAPI {
 		Gson gson=new Gson();
 		User user=new User("Varun", 22);
 		String s1=gson.toJson(user);
-		System.out.println(s1);
 		return Response.ok(s1).build();
 
 	}
