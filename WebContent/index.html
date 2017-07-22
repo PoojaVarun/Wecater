@@ -40,6 +40,16 @@
     
     <!-- UI-routing for state provider implementation -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script data-require="angular.js@*" data-semver="1.5.0" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+    <script src="https://code.angularjs.org/1.5.0/angular-animate.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.0/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="customcss/jk-carousel.min.css" />
+    <link rel="stylesheet" href="customcss/style.css" />
+    <script src="controllers/jk-carousel.min.js"></script>
+    <script src="controllers/script.js"></script>
   
   	
  	
@@ -74,19 +84,33 @@
       </div>
     </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="jumbotron " style="padding-bottom: 1px; padding-top: 57px;" ng-controller="CarouselCtrl">
       <div class="container">
-      	<div class="row">
+      	<md-card layout="column" layout-align="center center" class="img1">
+	    	<jk-carousel
+		      data="dataArray"
+		      item-template-url="'item-template.html'"
+		      max-width="1000" 
+		      max-height="500"
+		      auto-slide="true"
+		      auto-slide-time="5000"
+		      display="block"
+		      max-width="100%"
+		  	  height="435px"  >
+	      </jk-carousel>
+	  	</md-card>
+      
+      	<!-- <div class="row">
       		<div class="col">
       			<div id="my-slider" class="carousal slide" data-ride="carousel">
       				
-      				<!-- indicators -->
+      				indicators
       				<ol class="carousel-indicators" >
       					<li ng-repeat="slide in slides" data-slide-to="{{$index}}" data-target="#my-slider"  ng-class="{active:isActiveSlide($index)}">
       					</li>
       				</ol>
       				
-      				<!-- wrapper for slides -->
+      				wrapper for slides
       				<div class="carousel-inner"  role="listbox">
       					<div ng-repeat="slide in slides" class="item" ng-class="{active:isActiveSlide($index)}">
       						<img ng-src="{{slide.image}}" class="stretchy"/>
@@ -98,7 +122,7 @@
       					</div>
       				</div>
       				
-      				<!-- controls or nex or pre buttons -->
+      				controls or nex or pre buttons
       				<a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
       					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       				</a>
@@ -108,7 +132,8 @@
       				
       			</div>
       		</div>
-      	</div><!-- 
+      	</div> -->
+      	<!-- 
       	<img ng-repeat="slide in slides" class="carousel slide"  ng-src="{{slide.image}}"> -->
         <!-- <h1 class="display-3">Bon Apetit!</h1>
         <p>Choose from the Best Caterers.</p>
@@ -119,21 +144,21 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
+     	 <div class="col-md-4">
+          <h2>About us</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
+        <div class="col-md-4">
+          <h2>Best Customer Service</h2>
+          <p>We provide the best customer service, providing in person assistance until your happy occasion goes without a glitch</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Multiple Variety</h2>
+          <p>Providing a plethora of Menu to choose from ranging Indian, Italiano and Mexicano...You name it,We have it</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+       </div>
       </div>
 
       <hr>

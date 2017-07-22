@@ -1,7 +1,7 @@
 /**
  * 
  */
-var routerApp = angular.module('routerApp', ['ui.router']);
+var routerApp = angular.module('routerApp', ['ui.router','ngMaterial', 'jkAngularCarousel']);
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
     
@@ -37,7 +37,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
 routerApp.controller('widgetsController', function($scope,$http) {
 	$scope.name=null;
 	$scope.age=null;
-	$http.get("http://localhost:2222/Catering_service/rest/Caters/getUsers")
+	$http.get("http://localhost:8001/Catering_service/rest/Caters/getUsers")
 	.then(function(response) {
 		$scope.name=response.data.name;
 		$scope.age=response.data.age;
@@ -63,6 +63,19 @@ routerApp.controller('Myctrl', function($scope, $location,$animate, $interval) {
     $scope.search = function() {
         alert("Value to be searched is "+$scope.value);
     }
+});
+routerApp.controller('CarouselCtrl', function($scope) {
+    $scope.dataArray = [
+      {
+        src: 'media/images/1.jpg'
+      },
+      {
+        src: 'media/images/2.jpg'
+      },
+      {
+        src: 'media/images/3.jpg'
+      }
+    ];
 });
 
 /*$(document).on('scroll', function (e) {
