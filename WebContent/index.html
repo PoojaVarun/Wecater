@@ -62,7 +62,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand mb-0" href="#">
-      CaterersHub</a>
+      WeCaterer</a>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto ">
@@ -84,9 +84,14 @@
       </div>
     </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron " style="padding-bottom: 1px; padding-top: 57px;" ng-controller="CarouselCtrl">
+    <div class="jumbotron " style="padding-bottom: 1px; padding-top: 57px; background-color: #194240;" ng-controller="CarouselCtrl">
+      <div class="carousel-caption" style="padding-bottom: 85px; " ng-controller='Myctrl'>
+		<h1 class="display-3">Bon Apetit!</h1>
+	    <p>Choose from the Best Caterers.</p>
+	    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+ 	  </div>
       <div class="container">
-      	<md-card layout="column" layout-align="center center" class="img1">
+      <md-card layout="column" layout-align="center center" class="img1">
 	    	<jk-carousel
 		      data="dataArray"
 		      item-template-url="'item-template.html'"
@@ -98,7 +103,7 @@
 		      max-width="100%"
 		  	  height="435px"  >
 	      </jk-carousel>
-	  	</md-card>
+	  </md-card>
       
       	<!-- <div class="row">
       		<div class="col">
@@ -146,7 +151,7 @@
       <div class="row">
      	 <div class="col-md-4">
           <h2>About us</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>Be it <b>birthday parties, wedding celebration or any other event.</b> We will be there to bombard you and your people with our <b>authentic & delicious</b> dishes and make sure your taste buds have a 5 star experience.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
