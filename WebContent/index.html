@@ -84,17 +84,19 @@
       </div>
     </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron" ng-controller="CarouselCtrl">
+    <div class="jumbotron " style="padding-bottom: 1px; padding-top: 57px;" ng-controller="CarouselCtrl">
       <div class="container">
-      	<md-card layout="column" layout-align="center center" style="padding-bottom: 10px" >
-	    <h3>AutoSlide Carousel</h3>
+      	<md-card layout="column" layout-align="center center" class="img1">
 	    	<jk-carousel
 		      data="dataArray"
 		      item-template-url="'item-template.html'"
-		      max-width="800" 
+		      max-width="1000" 
 		      max-height="500"
 		      auto-slide="true"
-		      auto-slide-time="2000" >
+		      auto-slide-time="5000"
+		      display="block"
+		      max-width="100%"
+		  	  height="435px"  >
 	      </jk-carousel>
 	  	</md-card>
       
@@ -142,21 +144,21 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
+     	 <div class="col-md-4">
+          <h2>About us</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
+        <div class="col-md-4">
+          <h2>Best Customer Service</h2>
+          <p>We provide the best customer service, providing in person assistance until your happy occasion goes without a glitch</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Multiple Variety</h2>
+          <p>Providing a plethora of Menu to choose from ranging Indian, Italiano and Mexicano...You name it,We have it</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+       </div>
       </div>
 
       <hr>

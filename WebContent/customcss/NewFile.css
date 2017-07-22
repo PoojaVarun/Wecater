@@ -25,16 +25,22 @@
     width:1108px;
     height:175px;
 } */
-img {
-    width: 3000px;  /* set to anything and aspect ratio is maintained - also corrects glitch in Internet Explorer *//* for older IE browsers that draw borders around images */
+
+.img1{
     display: block;
-    max-width: 100%;
-    height: 435px;
-}
-.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-    display: block;
+    width: 3000px;
     max-width: 100%;
     height:435px ;
+}
+
+.layout-align-center-center, .layout-align-end-center, .layout-align-space-around-center, .layout-align-space-between-center, .layout-align-start-center {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    max-width: 803px;
 }
 /* div {
     display: block;
